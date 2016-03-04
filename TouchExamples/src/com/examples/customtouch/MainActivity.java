@@ -16,6 +16,7 @@ import android.widget.ArrayAdapter;
 import com.examples.customtouch.gesture.TwoDimensionGestureScrollActivity;
 import com.examples.customtouch.multitouch.MultitouchActivity;
 import com.examples.customtouch.scroll.TwoDimensionScrollActivity;
+import com.examples.customtouch.touchconsume.TouchConsumeActivity;
 import com.examples.customtouch.touchdelegate.TouchDelegateActivity;
 import com.examples.customtouch.touchforward.TouchForwardActivity;
 import com.examples.customtouch.touchintercept.TouchInterceptActivity;
@@ -24,22 +25,22 @@ import com.examples.customtouch.touchmove.MoveLoggerActivity;
 
 public class MainActivity extends ListActivity implements OnItemClickListener {
 
-	private static final String[] ITEMS = {
+    private static final String[] ITEMS = {
             "Move Logger Example", "Touch Listener Example",
             "Touch Delegate Example", "Touch Forward Example",
             "Pan Example", "Pan Gesture Example",
-	        "Multi-Touch Example", "Disable Touch Intercept"};
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, ITEMS);
-		getListView().setAdapter(adapter);
-		getListView().setOnItemClickListener(this);
-	}
+            "Multi-Touch Example", "Disable Touch Intercept","Consume Touch"};
 
-	@Override
-	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, ITEMS);
+        getListView().setAdapter(adapter);
+        getListView().setOnItemClickListener(this);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (position) {
             case 0: //Move Logger View
                 startActivity(new Intent(this, MoveLoggerActivity.class));
@@ -64,6 +65,8 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
                 break;
             case 7: //Disable Touch Intercept
                 startActivity(new Intent(this, TouchInterceptActivity.class));
+            case 8: //事件消费后的分发
+                startActivity(new Intent(this, TouchConsumeActivity.class));
             default:
                 break;
         }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.examples.customtouch.touchconsume.ConsumeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".touchconsume.TouchConsumeActivity">
+
+
+    <com.examples.customtouch.touchconsume.ConsumeTextView
+        android:id="@+id/consume_btn_no"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#71af6f"
+        android:text="不消费" />
+
+    <com.examples.customtouch.touchconsume.ConsumeTextView
+        android:id="@+id/consume_btn_dwon"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#6d8ea7"
+        android:text="消费down" />
+
+    <com.examples.customtouch.touchconsume.ConsumeTextView
+        android:id="@+id/consume_btn_move"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#cada9a"
+        android:text="消费move" />
+
+    <com.examples.customtouch.touchconsume.ConsumeTextView
+        android:id="@+id/consume_btn_up"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#9c5494"
+        android:text="消费up" />
+
+</com.examples.customtouch.touchconsume.ConsumeLayout>

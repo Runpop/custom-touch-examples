@@ -2,10 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.examples.customtouch"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
-    <uses-sdk android:minSdkVersion="9"
-        android:targetSdkVersion="15"/>
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="15" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -13,27 +18,36 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".scroll.TwoDimensionScrollActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".gesture.TwoDimensionGestureScrollActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".multitouch.MultitouchActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".touchmove.MoveLoggerActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".touchforward.TouchForwardActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".touchdelegate.TouchDelegateActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".touchlistener.TouchListenerActivity"
-                  android:screenOrientation="portrait"/>
+        <activity
+            android:name=".scroll.TwoDimensionScrollActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gesture.TwoDimensionGestureScrollActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".multitouch.MultitouchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".touchmove.MoveLoggerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".touchforward.TouchForwardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".touchdelegate.TouchDelegateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".touchlistener.TouchListenerActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".touchintercept.TouchInterceptActivity" />
+        <activity android:name=".touchconsume.TouchConsumeActivity"></activity>
     </application>
 
 </manifest>
