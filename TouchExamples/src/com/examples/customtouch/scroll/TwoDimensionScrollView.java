@@ -1,4 +1,4 @@
-package com.examples.customtouch.widget;
+package com.examples.customtouch.scroll;
 
 import android.content.Context;
 import android.util.AttributeSet;

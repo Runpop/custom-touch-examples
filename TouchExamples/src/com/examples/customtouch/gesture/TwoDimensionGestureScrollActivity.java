@@ -3,13 +3,15 @@
  *
  * See the file license.txt for copying permission.
  */
-package com.examples.customtouch;
+package com.examples.customtouch.gesture;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import com.examples.customtouch.R;
 
 import java.io.IOException;
 import java.io.InputStream;

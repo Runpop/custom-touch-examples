@@ -1,4 +1,4 @@
-package com.examples.customtouch;
+package com.examples.customtouch.touchintercept;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.examples.customtouch.R;
 
 /**
  * Created by Dave Smith

@@ -1,4 +1,4 @@
-package com.examples.customtouch;
+package com.examples.customtouch.touchmove;
 
 import android.app.Activity;
 import android.graphics.Point;
@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
+
+import com.examples.customtouch.R;
 
 /**
  * Created by Dave Smith

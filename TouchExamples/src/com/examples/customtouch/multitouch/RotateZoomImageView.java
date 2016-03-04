@@ -1,4 +1,4 @@
-package com.examples.customtouch.widget;
+package com.examples.customtouch.multitouch;
 
 import android.content.Context;
 import android.graphics.Matrix;

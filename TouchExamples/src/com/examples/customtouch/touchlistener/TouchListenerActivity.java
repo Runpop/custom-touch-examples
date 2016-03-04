@@ -1,10 +1,12 @@
-package com.examples.customtouch;
+package com.examples.customtouch.touchlistener;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.CheckBox;
+
+import com.examples.customtouch.R;
 
 /**
  * Created by Dave Smith

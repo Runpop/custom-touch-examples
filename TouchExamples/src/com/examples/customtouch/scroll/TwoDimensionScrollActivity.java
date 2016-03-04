@@ -3,7 +3,7 @@
  *
  * See the file license.txt for copying permission.
  */
-package com.examples.customtouch;
+package com.examples.customtouch.scroll;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.examples.customtouch.widget.TwoDimensionScrollView;
+import com.examples.customtouch.R;
 
 public class TwoDimensionScrollActivity extends Activity {
 

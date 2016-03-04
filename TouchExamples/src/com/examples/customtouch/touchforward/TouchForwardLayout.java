@@ -3,7 +3,7 @@
  *
  * See the file license.txt for copying permission.
  */
-package com.examples.customtouch.widget;
+package com.examples.customtouch.touchforward;
 
 import android.content.Context;
 import android.graphics.Point;

@@ -3,11 +3,10 @@
  *
  * See the file license.txt for copying permission.
  */
-package com.examples.customtouch;
+package com.examples.customtouch.touchdelegate;
 
 import android.app.Activity;
 import android.os.Bundle;
-import com.examples.customtouch.widget.TouchDelegateLayout;
 
 public class TouchDelegateActivity extends Activity {
 

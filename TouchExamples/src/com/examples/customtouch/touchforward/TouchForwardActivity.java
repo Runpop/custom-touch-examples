@@ -3,7 +3,7 @@
  *
  * See the file license.txt for copying permission.
  */
-package com.examples.customtouch;
+package com.examples.customtouch.touchforward;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,7 +11,6 @@ import android.view.Gravity;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import com.examples.customtouch.widget.TouchForwardLayout;
 
 public class TouchForwardActivity extends Activity {
 

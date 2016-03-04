@@ -13,6 +13,15 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 
+import com.examples.customtouch.gesture.TwoDimensionGestureScrollActivity;
+import com.examples.customtouch.multitouch.MultitouchActivity;
+import com.examples.customtouch.scroll.TwoDimensionScrollActivity;
+import com.examples.customtouch.touchdelegate.TouchDelegateActivity;
+import com.examples.customtouch.touchforward.TouchForwardActivity;
+import com.examples.customtouch.touchintercept.TouchInterceptActivity;
+import com.examples.customtouch.touchlistener.TouchListenerActivity;
+import com.examples.customtouch.touchmove.MoveLoggerActivity;
+
 public class MainActivity extends ListActivity implements OnItemClickListener {
 
 	private static final String[] ITEMS = {
