@@ -9,5 +9,6 @@ Examples include:
 - GestureDetector
 - ScaleGestureDetector
 - TouchDelegate
+- TouchConsume
 
 The sample code is licensed under the MIT Open Source License
